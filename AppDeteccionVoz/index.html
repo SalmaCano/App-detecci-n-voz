@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Detección de Voz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('micros.jpeg'); /* Ruta de tu imagen de fondo */
+      background-size: cover; /* Cubre toda la pantalla */
+      background-position: center; /* Centra la imagen */
+      font-family: Arial, sans-serif; /* Fuente predeterminada */
+    }
+
+    /* Estilos adicionales para el contenido */
+    .content {
+      padding: 20px;
+      color: #ffffff; /* Color de texto para que resalte sobre la imagen de fondo */
+    }
+
+    .card {
+      border-radius: 20px;
+      box-shadow: 20px 20px 15px rgba(48, 3, 3, 0.1);
+    }
+
+    .footer {
+      background-color: #740758;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    #instrucciones {
+      margin-left: 5cm; 
+    }
+
+    .navbar {
+      background-color: #740758;
+    }
+
+    .navbar-brand {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .navbar-toggler {
+      border-color: #ffffff;
+    }
+
+    .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="fw-bold">Detección de Voz</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container first-div">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card instructions-card mb-4">
+          <div id="comandos-container" class="card-body text-center">
+            <h2 class="mb-4">Asistente Vela</h2>
+            <br>
+            <div class="mb-4">
+              <button onclick="startRecording()" class="btn btn-success rounded-pill me-2">Iniciar</button>
+              <button onclick="stopRecording()" class="btn btn-warning rounded-pill">Detener</button>
+            </div>
+            <div>
+              <br>
+            </div>
+            <br>
+            <p id="ordenIdentificada" class="mb-0">Orden Identificada:</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container first-div">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card instructions-card mb-4">
+              <div id="comandos-container" class="card-body text-lift">
+                <h2 class="mb-4 fw-bold">INSTRUCCIONES</h2>
+
+        <table class="mx-auto">
+          <tr>
+            <th>ORDEN</th>
+          </tr>
+          <tr>
+            <td>Enciende/apaga la luz de la recámara</td>
+          </tr>
+          <tr>
+            <td>Enciende/apaga la luz de la sala</td>
+          </tr>
+          <tr>
+            <td>Enciende/apaga las luces del jardín</td>
+          </tr>
+          <tr>
+            <td>Enciende/apaga el ventilador</td>
+          </tr>
+          <tr>
+            <td>Abre/cierra las cortinas</td>
+          </tr>
+          <tr>
+            <td>Activa/desactiva la alarma de la casa</td>
+          </tr>
+          <tr>
+            <td>Enciende/apaga las cámaras de seguridad</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <span>Todos los derechos reservados. Salma Cano Sierra © 2024 </span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
